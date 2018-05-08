@@ -1,0 +1,13 @@
+HW2:
+
+In CS4551_Kassar i have a switch statement asking the user to choose an option. Option 1 goes to aliasing. Then the user is asked to enter a M,N,and K value for the circles. A new imag is created and that and the values are sent to the Image Class. In the Image class in the aliasing method i made it so the default img is a blank white img. Then i check to see how many circles i can fit into the img. When i go  through the for loop i made it increment by 0.1 as to better populate the circles with pixels. After a circle is created i change the radius and start the process again. 
+
+When resizing the img, i make a new img1 with size 512/k x 512/k. I have a nested for loop going through img1 and at each pixel i get the color for img at x * k, and y * k. 
+
+For the fisrt filter i make a new img2. a nested for loop going through img. and if statments going through each situation. I the pixel is on the top left, right, bottom left, right corner. If its on the left, right, up or down or in the middle. And depending where it is i get the average of the pixels around it and i set the new color.
+
+For the second filter its basically the same as the first but differnet wieghts for each sourounding pixel.
+
+I think the best method that worked the best was M = 5, N = 40, and K = 2. I think this worked the best because the cirles were so think that it didn't really make much of a difference when resized.
+
+For option 2 we go to dictionary coding. The user is promted to enter a file name. Then the file is taken to the LZW class. In the LZW class, the file is parsed into an array and is seperated by character. We then have to get the initial values so we go throught the whole array finding if there are any strings that are not already in the dictionary. when that is over we move on to check longer sequences. we make sure that the dictionary doesn't go over 256 elements and that the counter doens't go over what the arr size is. if the dictionary contains a value we concatinated that value with the next value and add that to the dictionary. Then we print out the dictionary. And that is where i stopped because i couldn't figure out how to do the rest
